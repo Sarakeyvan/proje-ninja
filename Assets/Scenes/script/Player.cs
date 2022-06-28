@@ -115,6 +115,11 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
+        if(other.gameObject.tag == "Finishlevel2")
+        {
+            SceneManager.LoadScene("menu");
+        }
+
         
 
 

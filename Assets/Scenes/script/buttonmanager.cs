@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 public class buttonmanager : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Restart()
-    {
-        SceneManager.LoadScene("Main");
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void Level1()
+    {
+      SceneManager.LoadScene("menu");  
     }
 }

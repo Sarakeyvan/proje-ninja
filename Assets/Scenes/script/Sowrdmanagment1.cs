@@ -10,18 +10,18 @@ public class Sowrdmanagment1 : MonoBehaviour
     public Text money;
     void Start()
     {
-      sowrd = PlayerPrefs.GetInt("Money",0);
+      //sowrd = PlayerPrefs.GetInt("Money",0);
     }
 
     // Update is called once per frame
     void Update()
     {
-          money.text= PlayerPrefs.GetInt("Money",0).ToString();
+          money.text= sowrd.ToString();
     }
 
     public void Addmoney()
     {
         sowrd++;
-        PlayerPrefs.SetInt("Money" , sowrd);
+        //PlayerPrefs.SetInt("Money" , sowrd);
     }
 }
